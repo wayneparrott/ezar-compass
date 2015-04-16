@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, 
+        	width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>ezAR Compass</title>
+    </head>
+    <body>
+    	<!-- This div takes the whole browser -->
+    	<div class="compass-outer">
+	    	<div class="compass-content">
+	    		<div class="compass-heading">
+	    			<!-- Heading data -->
+	    			<div id="heading">0</div>
+                    <img class="forward-arrow" src="img/arrow.png">
+	    		</div>
+	    	</div>
+	    	<!-- Top right corner -->
+	    	<div class="top-right-corner">
+    			<img id="compass-star" class="compass-star" src="img/compassStar.png">
+    		</div>
+            <div class="attributing">
+                ezAR Technologies
+            </div>
+    	</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

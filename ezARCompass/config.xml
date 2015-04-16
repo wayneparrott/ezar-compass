@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ezartech.demo.ezarcompass" version="0.0.1" 
+	xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ezAR Compass</name>
+    <description>
+        View compass heading through a realtime camera view.
+    </description>
+    <author>
+        ezAR team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <platform name="android">
+              <icon src="res/android/compass_icon_32.png" density="ldpi" />
+              <icon src="res/android/compass_icon_72.png" density="mdpi" />
+              <icon src="res/android/compass_icon_96.png" density="hdpi" />
+              <icon src="res/android/compass_icon_512.png" density="xhdpi" />
+    </platform>
+
+</widget>

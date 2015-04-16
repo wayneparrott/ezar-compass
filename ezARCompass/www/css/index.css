@@ -1,0 +1,79 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:transparent;
+    font-family: Open Sans, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+.compass-outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* Portrait layout (default) */
+.compass-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.compass-heading {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 240px;
+    height: 240px;
+    line-height: 238px;
+    font-size: 120px;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 213, 0);
+    background-color: rgba(32, 32, 32, 0.5);
+    /* z-index: 80; */
+}
+
+.compass-heading #heading {
+    color: rgb(255, 213, 0);
+    /* z-index: 100; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.compass-heading .forward-arrow {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0px;
+    /* z-index: 90; */
+}
+
+.compass-star {
+    width: 100px;
+    height: 100px;
+}
+
+.top-right-corner {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.attributing {
+    color: rgb(255, 213, 0);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
