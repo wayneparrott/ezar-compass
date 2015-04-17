@@ -17,6 +17,8 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        app.updateAppLayout();
+
         ezar.initialize(
                 function() {
                     ezar.getBackCamera().start();
@@ -38,9 +40,12 @@ var app = {
                 });
 
         window.addEventListener("resize", function() {
-            document.getElementsByClassName("compass-outer")[0]
-                .style.height = window.innerHeight + "px";
+            app.updateAppLayout();
         });
+    },
+    updateAppLayout: function() {
+        document.getElementsByClassName("compass-outer")[0]
+                .style.height = window.innerHeight + "px";
     },
     updateHeading: function(hdng) {
         // Set heading value
