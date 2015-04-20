@@ -52,6 +52,12 @@ body {
     height: 100%;
 }
 
+.compass-heading #heading .degrees {
+    font-size: 50%;
+    vertical-align: text-top;
+    line-height: 100px;
+}
+
 .compass-heading .forward-arrow {
     position: absolute;
     width: 100%;

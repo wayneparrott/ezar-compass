@@ -49,7 +49,7 @@ var app = {
     },
     updateHeading: function(hdng) {
         // Set heading value
-        document.getElementById("heading")
+        document.getElementById("heading-val")
             .innerHTML = hdng;
         // Rotate compass star
         document.getElementById("compass-star")
