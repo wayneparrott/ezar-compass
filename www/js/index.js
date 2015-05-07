@@ -23,6 +23,8 @@ var app = {
                 function() {
                     ezar.getBackCamera().start();
 
+                    //watchHeading() async update randomly stops on ios and android
+                    // use getCurrentHeading() as more reliable alternative 
                     setInterval(function() {
                         navigator.compass.getCurrentHeading(
                             function(heading) { 
