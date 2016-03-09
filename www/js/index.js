@@ -14,12 +14,12 @@ var app = {
     },
     // deviceready Event Handler
     //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
+    // The scope of 'this' is the event. In order to call the 'doSnapshot'
+    // function, we must explicitly call 'app.doSnapshot(...);'
     onDeviceReady: function() {
         app.updateAppLayout();
 
-        ezar.initialize(
+        ezar.initializeVideoOverlay(
                 function() {
                     ezar.getBackCamera().start();
 
@@ -38,12 +38,16 @@ var app = {
  
                 },
                 function(error) {
-                    console.log("Error initializing EasyAR: " + error);
+                    console.log("Error initializing ezAR: " + error);
                 });
 
         window.addEventListener("resize", function() {
             app.updateAppLayout();
         });
+        document.getElementById("snapbtn").addEventListener("click", function() {
+            app.doSnapshot();
+        });
+       
     },
     updateAppLayout: function() {
         document.getElementsByClassName("compass-outer")[0]
@@ -56,7 +60,25 @@ var app = {
         // Rotate compass star
         document.getElementById("compass-star")
             .style.webkitTransform = "rotate(" + hdng + "deg)";
-    }
+    },
+    doSnapshot: function() {
+        //hide snapbtn so it will not be in snapshot image
+        document.getElementById("snapbtn").style.display = "none";
+        
+        //give dom chance to hide snapbtn before image capture
+        setTimeout( function() { 
+            ezar.snapshot(  
+                function(data) {
+                    alert("Snapshot complete.\nSee Gallery for image");
+                    document.getElementById("snapbtn").style.display = "block";
+                }, 
+                function(err) {
+                    alert("Error: " + err);
+                    document.getElementById("snapbtn").style.display = "block";
+                },
+                {"saveToPhotoAlbum":true}
+            )}, 10);
+    } 
 };
-
+    
 app.initialize();

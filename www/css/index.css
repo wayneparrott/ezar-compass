@@ -77,6 +77,12 @@ body {
     top: 10px;
 }
 
+.snap {
+    position: absolute;
+    right: 31px;
+    bottom: 26px;
+}
+
 .attributing {
     color: rgb(255, 213, 0);
     position: absolute;
