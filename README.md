@@ -6,9 +6,9 @@ Augmented reality compass using ezAR plugins for Cordova
 While ezAR works with Cordova-based SDKs such as Ionic, this example uses Cordova CLI examples are provided below. 
 Install or update your [Apache Cordova sdk](https://cordova.apache.org/)
 
-step-0.  Download and unzip the ezAR Startup Kit from [ezartech.com](http://ezartech.com
+step-0.  Download and unzip the ezAR Startup Kit (ver 0.2 or greater) from [ezartech.com](http://ezartech.com
 
-step-1.  The ezAR Startup Kit includes 3 plugins.
+step-1.  The ezAR Startup Kit or greater includes 3 plugins.
          From the commandline add the ezAR VideoOverlay and Snapshot plugins 
          to the project as follows:
 
