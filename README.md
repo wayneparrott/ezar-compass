@@ -8,18 +8,13 @@ Install or update your [Apache Cordova sdk](https://cordova.apache.org/)
 
 step-0.  Download and unzip the ezAR Startup Kit (ver 0.2 or greater) from [ezartech.com](http://ezartech.com
 
-step-1.  The ezAR Startup Kit or greater includes 3 plugins.
-         From the commandline add the ezAR VideoOverlay and Snapshot plugins 
-         to the project as follows:
+*Note: the project will automatically install its required plugins. The Cordova 
+whitelist and device-orientation plugins will be installed from npm. The 
+ezAR VideoOverlay and  Snapshot plugins will be installed from the relative path 
+../../plugins/ directory. If the ezAR plugins are not at that location please 
+edit the config.xml with the proper location of the plugins.*
 
-        cordova plugin add <filePathToEzARStartupKit>/plugins/com.ezartech.ezar.videooverlay
-        cordova plugin add <filePathToEzARStartupKit>/plugins/com.ezartech.snapshot
-
-step-2.  Add the Cordova device-orientation plugin to provide access to the compass
-
-        cordova plugin add cordova-plugin-device-orientation
-
-step-3.  Add your target platform(s) to the project
+step-1.  Add your target platform(s) to the project
 
         cordova platform add ios
     
@@ -28,10 +23,10 @@ or
         cordova platform add android
 
 
-step-4.  Build and install on device
+step-2.  Build and install on device
 
-Note: because of the ezAR camera requirement the app will only perform correctly 
-when installed on a real mobile device.
+*Note: because of the ezAR camera requirement the app will only perform correctly 
+when installed on a real mobile device.*
 
 ##ezAR Docs and Tech Support
 See [ezartech.com](http://ezartech.com) for documentation and support.
