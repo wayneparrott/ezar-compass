@@ -11,7 +11,7 @@
 
     <plugin name="cordova-plugin-whitelist" />
     <plugin name="cordova-plugin-device-orientation" />
-    <plugin name="com.ezartech.ezar.videooverlay" spec="../../plugins/com.ezartech.ezar.videoOverlay" />
+    <plugin name="com.ezartech.ezar.videooverlay" spec="../../plugins/com.ezartech.ezar.videooverlay" />
     <plugin name="com.ezartech.ezar.snapshot" spec="../../plugins/com.ezartech.ezar.snapshot" />
     
     <!--uncomment elements below to use alternative webviews-->
