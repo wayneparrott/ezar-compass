@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ezartech.demo.ezarcompass" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ezartech.demo.ezarcompass" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>ezAR Compass</name>
     <description>
         View compass heading through a realtime camera view.
@@ -11,8 +11,8 @@
 
     <plugin name="cordova-plugin-whitelist" />
     <plugin name="cordova-plugin-device-orientation" />
-    <plugin name="com.ezartech.ezar.videooverlay" spec="../../plugins/com.ezartech.ezar.videooverlay" />
-    <plugin name="com.ezartech.ezar.snapshot" spec="../../plugins/com.ezartech.ezar.snapshot" />
+    <plugin name="cordova-plugin-ezar-videooverlay"/>
+    <plugin name="cordova-plugin-ezar-snapshot" />
     
     <!--uncomment elements below to use alternative webviews-->
     <!--<plugin name="cordova-plugin-crosswalk-webview" />-->
