@@ -1,2 +1,14 @@
-platforms/
+#IDE/Tools
+===========================
+jsconfig.json
+.vscode/
+
+
+#cordova project resources
 plugins/
+platforms/
+
+# OSX
+# =========================
+
+.DS_Store
